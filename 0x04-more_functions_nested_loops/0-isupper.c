@@ -2,6 +2,7 @@
 
 /**
  * _isupper - func to check if the char is uppercase or not
+ * @c: checked char
  * Return: 0
  */
 
