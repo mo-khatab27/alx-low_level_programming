@@ -1,30 +1,32 @@
 #include <stdio.h>
+#include <math.h>
 
 /**
- * main - function
+ * main - func
  * Return: 0
  */
 
 int main(void)
 {
-long int i;
-long int j;
-long int k;
+long num = 612852475143;
+long largestPrimeFactor = 2;
+long factor = 2;
 
-i = 612852475143;
-
-while (612852475143 % 2 == 0)
+while (num > 1)
 {
-	j = 2;
-	i /= 2;
-}
-for (k = 3 ; k <= i ; k++)
-{
-	if (i % k == 0)
+	if (num % factor == 0)
 	{
-		j = k;
+		num = num / factor;
+		largestPrimeFactor = factor;
+
+		while (num % factor == 0)
+		{
+			num = num / factor;
+		}
 	}
+	factor = factor + 1;
 }
-printf("%ld\n", j);
+
+printf("%ld\n", largestPrimeFactor);
 return (0);
 }
