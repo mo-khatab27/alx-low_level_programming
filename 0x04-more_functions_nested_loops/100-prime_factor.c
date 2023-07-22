@@ -7,16 +7,24 @@
 
 int main(void)
 {
-	long i;
-	long j;
+long i;
+long j;
+long k;
 
-	for (i = 1 ; i <= 306426237572 ; i++)
+i = 612852475143;
+
+while (612852475143 % 2 == 0)
+{
+	j = 2;
+	i /= 2;
+}
+for (k = 3 ; k <= i ; k++)
+{
+	if (i % k == 0)
 	{
-		if (612852475143 % i == 0)
-		{
-			j = i;
-		}
+		j = k;
 	}
-	printf("%ld\n", j);
-	return (0);
+}
+printf("%ld\n", j);
+return (0);
 }
