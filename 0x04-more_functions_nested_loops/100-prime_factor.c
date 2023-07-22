@@ -7,9 +7,9 @@
 
 int main(void)
 {
-long i;
-long j;
-long k;
+long int i;
+long int j;
+long int k;
 
 i = 612852475143;
 
