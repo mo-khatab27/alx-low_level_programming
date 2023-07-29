@@ -10,7 +10,7 @@ void rev_string(char *s)
 	int i;
 	char p[10];
 
-	for (i = 0  ; i < 10 ; i++)
+	for (i = 0  ; i < 9 ; i++)
 	{
 		p[i] = s[8 - i];
 	}
